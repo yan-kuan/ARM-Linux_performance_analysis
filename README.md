@@ -12,38 +12,23 @@ And Beaglebone Black needs Network environment.
 
 	$ opkg install python
 
-+ Gnuplot
-	
-	+ Toolchain
-	
-		$ opkg install gcc
-
-		And you can use `arm-angstrom-linux-gnueabi-gcc` on BBB
-
-	+ Gnuplot Source Code
-	
-		[gnuplot ver. 4.4.0](http://sourceforge.net/projects/gnuplot/?source=typ_redirect)
-
-	+ Compile Gnuplot on BBB
-	
-		Change path to Gnuplot directory.
-
-		./configure CC=arm-angstrom-linux-gnueabi-gcc
-
-		make
-		
-		make install
-		
-	
-		
-		
++ [Gnuplot](https://hackpad.com/Install-gnuplot-on-the-beaglebone-black-oCP8XM60OC5)
 	
 + lmbench
 
+Compile lmbench on PC and copy the directory to your BBB.
+
+###
+	git clone https://github.com/el8/lmbench-next.git
+	
+	cd lmbench-next
+	
+	make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
+ 
  
 + Network file system or SSH
 
-You can use NFS or SSH to comunicate with Beaglebone black
+You can use NFS or SSH to comunicate with BBB.
 
 IO-bound test environment
 =========================
@@ -60,10 +45,8 @@ Please put the file in the AUTO_TEST/IO-bound/ directory.
 Building and Verification
 =========================
 
+make
+
+./auto
 	
-
-Steps
-=====
-
-
 
