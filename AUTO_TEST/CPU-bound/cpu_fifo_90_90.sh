@@ -1,4 +1,9 @@
 #!/bin/bash
+
+result="CPU_results"
+rm -rf $result
+mkdir -p $result
+
 echo "0 0 0 0" > /proc/sys/kernel/printk                                                                          
 echo 0 > /sys/kernel/debug/tracing/tracing_on
 echo 0 > /sys/kernel/debug/tracing/trace
