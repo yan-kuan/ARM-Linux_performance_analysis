@@ -16,7 +16,7 @@ And Beaglebone Black needs Network environment.
 	
 + lmbench
 
-Compile lmbench on PC and copy the directory to your BBB.
+	+ Compile lmbench on PC and copy the directory to your BBB.
 
 ###
 	git clone https://github.com/el8/lmbench-next.git
@@ -28,7 +28,7 @@ Compile lmbench on PC and copy the directory to your BBB.
  
 + Network file system or SSH
 
-You can use NFS or SSH to comunicate with BBB.
+	+ You can use NFS or SSH to comunicate with BBB.
 
 IO-bound test environment
 =========================
