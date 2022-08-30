@@ -3,6 +3,7 @@
 #include	<netinet/in.h>
 #include	<netdb.h>
 #include	<arpa/inet.h>
+#include    <rpc/rpc.h>
 
 int	udp_server(u_long prog, int rdwr);
 void	udp_done(u_long prog);

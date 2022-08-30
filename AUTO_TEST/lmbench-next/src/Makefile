@@ -12,9 +12,9 @@ INSTALL_PATH = /usr/local
 OS = $(shell ../scripts/os)
 O = ../bin/$(OS)
 CONFIG = ../bin/$(OS)/`../scripts/config`
-CFLAGS = -O2 -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_socklen_t -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1
+CFLAGS = -O2 -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_socklen_t -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1 -I/usr/include/tirpc
 LDFLAGS = -Wl,-s 
-LDLIBS = $(O)/lmbench.a -lm
+LDLIBS = $(O)/lmbench.a -lm -lntirpc -ltirpc
 
 INCS =	bench.h lib_mem.h lib_tcp.h lib_udp.h stats.h timing.h		\
 	lib_debug.h lib_unix.h names.h

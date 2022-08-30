@@ -1,6 +1,4 @@
-CC = arm-angstrom-linux-gnueabi-gcc
-
-default: all
+CC = gcc
 
 all:
 	$(CC) auto.c -o auto 

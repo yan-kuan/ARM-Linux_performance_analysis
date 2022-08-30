@@ -3,6 +3,7 @@
 #include	<netinet/in.h>
 #include	<netdb.h>
 #include	<arpa/inet.h>
+#include    <rpc/rpc.h>
 
 int	tcp_server(int prog, int rdwr);
 int	tcp_done(int prog);
