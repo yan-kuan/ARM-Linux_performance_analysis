@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+int switch_file(int num);
+
 int main(int argc, char *argv[])
 {
 	FILE *fp_read;
