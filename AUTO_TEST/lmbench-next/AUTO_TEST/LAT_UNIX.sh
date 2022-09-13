@@ -13,7 +13,7 @@ file=$file_dest$extension
 
 for size in $MSG
 do      
-        RUN="../bin/arm/lat_unix -W $WARMUPS -N $REPETITIONS -m $size"
+        RUN="../bin/aarch64-linux/lat_unix -W $WARMUPS -N $REPETITIONS -m $size"
       	if test -s $file 
 		then
 		$RUN >> $file 2>&1

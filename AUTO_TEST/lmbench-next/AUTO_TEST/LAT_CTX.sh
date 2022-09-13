@@ -18,7 +18,7 @@ for size in $CTX
 do      
 	for pnumber in $N
 	do
-		RUN="../bin/arm/lat_ctx -W $WARMUPS -N $REPETITIONS -s $size $pnumber"
+		RUN="../bin/aarch64-linux/lat_ctx -W $WARMUPS -N $REPETITIONS -s $size $pnumber"
 
 		#flush cache
 		sync && echo 3 > /proc/sys/vm/drop_caches

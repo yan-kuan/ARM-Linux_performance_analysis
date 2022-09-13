@@ -16,7 +16,7 @@ mkdir -p $file_dest
 for i in `seq 1 50`
 do
 	
-	RUN="../bin/arm/lat_syscall \
+	RUN="../bin/aarch64-linux/lat_syscall \
  	-W $WARMUPS -N $REPETITIONS getppid"
 	
 	file=$file_dest$extension1
@@ -32,7 +32,7 @@ done
 #lat_syscall open
 for i in `seq 1 50`
 do
-        RUN="../bin/arm/lat_syscall \
+        RUN="../bin/aarch64-linux/lat_syscall \
         -W $WARMUPS -N $REPETITIONS open"
 
         file=$file_dest$extension2
@@ -48,7 +48,7 @@ done
 #lat_syscall read
 for i in `seq 1 50`
 do
-        RUN="../bin/arm/lat_syscall \
+        RUN="../bin/aarch64-linux/lat_syscall \
         -W $WARMUPS -N $REPETITIONS read"
 
         file=$file_dest$extension3
@@ -64,7 +64,7 @@ done
 #lat_syscall write
 for i in `seq 1 50`
 do
-        RUN="../bin/arm/lat_syscall \
+        RUN="../bin/aarch64-linux/lat_syscall \
         -W $WARMUPS -N $REPETITIONS write"
 
         file=$file_dest$extension4
